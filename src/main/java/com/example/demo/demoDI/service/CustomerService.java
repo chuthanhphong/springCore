@@ -2,6 +2,7 @@ package com.example.demo.demoDI.service;
 
 import com.example.demo.demoDI.model.Customer;
 import com.example.demo.demoDI.repository.CustomerRepository;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.Optional;
@@ -10,7 +11,7 @@ import java.util.Optional;
 public class CustomerService implements IGenaralService<Customer> {
 
     //Field injection
-//    @Autowired
+    @Autowired
     private CustomerRepository customerRepository;
 
 //    public CustomerService(CustomerRepository customerRepository) {
