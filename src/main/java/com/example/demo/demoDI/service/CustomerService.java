@@ -21,9 +21,9 @@ public class CustomerService implements IGenaralService<Customer> {
 
 
     //setter injection
-    public void setCustomerRepository(CustomerRepository customerRepository) {
-        this.customerRepository = customerRepository;
-    }
+//    public void setCustomerRepository(CustomerRepository customerRepository) {
+//        this.customerRepository = customerRepository;
+//    }
 
     @Override
     public Iterable<Customer> findAll() {
